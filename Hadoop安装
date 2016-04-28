@@ -29,4 +29,11 @@
 2016-04-28 22:41:04:localhost: starting nodemanager, logging to /usr/local/hadoop/logs/yarn-root-nodemanager-43a8763e2f82.out
 
 - 查看docker images   $ sudo docker images
-- 如何运行？https://github.com/kiwenlau/hadoop-cluster-docker
+- 运行：在虚拟机上写shell脚本。hadoop-docker 项目中的bootstrap.sh
+  - 先更改root密码：sudo passwd
+  - 然后在/etc下写bootsrap.sh
+  - $ docker run -it sequenceiq/hadoop-docker:2.7.1 /etc/bootstrap.sh -bash
+
+
+
+Ref：https://github.com/kiwenlau/hadoop-cluster-docker
