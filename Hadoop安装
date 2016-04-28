@@ -1,0 +1,4 @@
+- 安装Ubuntu虚拟机
+- 安装sshd服务
+- 安装daocloud服务  在daocloud.io上配置主机
+- 安装docker hadoop
