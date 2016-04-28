@@ -33,7 +33,15 @@
   - 先更改root密码：sudo passwd
   - 然后在/etc下写bootsrap.sh
   - $ docker run -it sequenceiq/hadoop-docker:2.7.1 /etc/bootstrap.sh -bash
+- 测试
+```java
+cd $HADOOP_PREFIX
+# run the mapreduce
+bin/hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-2.7.1.jar grep input output 'dfs[a-z.]+'
 
+# check the output
+bin/hdfs dfs -cat output/*
+```
 
 
 Ref：https://github.com/kiwenlau/hadoop-cluster-docker
