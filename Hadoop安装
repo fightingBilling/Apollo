@@ -27,3 +27,6 @@
 2016-04-28 22:41:01:starting yarn daemons
 2016-04-28 22:41:01:starting resourcemanager, logging to /usr/local/hadoop/logs/yarn--resourcemanager-43a8763e2f82.out
 2016-04-28 22:41:04:localhost: starting nodemanager, logging to /usr/local/hadoop/logs/yarn-root-nodemanager-43a8763e2f82.out
+
+- 查看docker images   $ sudo docker images
+- 如何运行？
