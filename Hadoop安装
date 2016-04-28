@@ -1,4 +1,29 @@
 - 安装Ubuntu虚拟机
 - 安装sshd服务
 - 安装daocloud服务  在daocloud.io上配置主机
-- 安装docker hadoop
+- 主机配置完毕后，在dockerhub上搜索hadoop，安装docker hadoop
+
+安装完毕后的启动日志
+2016-04-28 22:28:05:[33m
+2016-04-28 22:28:05:# ----------------------------------------------------------------------------
+2016-04-28 22:28:05:# DaoCloud ToolBox for Docker
+2016-04-28 22:28:05:#
+2016-04-28 22:28:05:# DaoCloud, Inc. (c) 2016
+2016-04-28 22:28:05:#
+2016-04-28 22:28:05:# Fastest way to pull image from Docker Hub
+2016-04-28 22:28:05:# ----------------------------------------------------------------------------[0m
+2016-04-28 22:28:05:
+2016-04-28 22:28:05:Pulling repository sequenceiq/hadoop-docker:2.7.1
+2016-04-28 22:40:24:Creating dao_hadoop-docker_1...
+2016-04-28 22:40:25:/
+2016-04-28 22:40:25:Starting sshd: [ OK ]
+2016-04-28 22:40:29:16/04/28 10:40:29 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2016-04-28 22:40:30:Starting namenodes on [43a8763e2f82]
+2016-04-28 22:40:34:43a8763e2f82: starting namenode, logging to /usr/local/hadoop/logs/hadoop-root-namenode-43a8763e2f82.out
+2016-04-28 22:40:38:localhost: starting datanode, logging to /usr/local/hadoop/logs/hadoop-root-datanode-43a8763e2f82.out
+2016-04-28 22:40:46:Starting secondary namenodes [0.0.0.0]
+2016-04-28 22:40:51:0.0.0.0: starting secondarynamenode, logging to /usr/local/hadoop/logs/hadoop-root-secondarynamenode-43a8763e2f82.out
+2016-04-28 22:41:01:16/04/28 10:41:01 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2016-04-28 22:41:01:starting yarn daemons
+2016-04-28 22:41:01:starting resourcemanager, logging to /usr/local/hadoop/logs/yarn--resourcemanager-43a8763e2f82.out
+2016-04-28 22:41:04:localhost: starting nodemanager, logging to /usr/local/hadoop/logs/yarn-root-nodemanager-43a8763e2f82.out
