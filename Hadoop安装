@@ -43,5 +43,10 @@ bin/hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-2.7.1.jar grep i
 bin/hdfs dfs -cat output/*
 ```
 
+第二次或者多次后想运行hadoop
+- $ sudo docker run -it sequenceiq/hadoop-docker:2.7.1 /etc/bootstrap.sh -bash
+- bash-4.1# cd /usr/local/hadoop-2.7.1
+- bash-4.1# bin/hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-2.7.1.jar grep input output 'dfs[a-z.]+'
+
 
 Ref：https://github.com/kiwenlau/hadoop-cluster-docker
